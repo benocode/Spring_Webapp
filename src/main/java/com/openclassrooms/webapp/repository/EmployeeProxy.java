@@ -26,7 +26,6 @@ public class EmployeeProxy {
     */
     public Iterable<Employee> getEmployees() {
         String baseApiUrl = props.getApiUrl();
-        System.out.println(baseApiUrl);
         String getEmployeesUrl = baseApiUrl + "/employees";
 
         // RestTemplate exécute la requête HTTP et convertit le résultat JSON en objet Java
